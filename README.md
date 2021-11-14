@@ -1,3 +1,3 @@
 # tour-plan
 
-Сафонов Илья
+Safonov Ilya
