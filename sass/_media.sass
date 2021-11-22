@@ -4,19 +4,37 @@
 @media (max-width: 992px)
    .container
       max-width: 700px
+   .logo
+      width: 134px
    .header
       &__top
          padding: 30px 0 30px
       &__search
-         margin-left: auto
+         margin-left: 47px
       &__menu
          padding: 22px 0
+         justify-content: space-around
          .menu-link
             font-size: 12px
             line-height: 15px  
    .search
       &__input
          max-width: 340px
+         padding-left: 23px
+   .breadcrumb-list__item:not(:last-child)::after 
+      content: '/'
+      margin-right: 2px
+   .hotel
+      padding: 23px 0 70px
+      &-info
+         &__offer
+            margin-left: 14px
+      &-description
+         word-spacing: 1px
+   .stars
+      display: flex
+   .star
+      margin-right: 3px
 @media (max-width: 768px)
    .container
       max-width: 576px
