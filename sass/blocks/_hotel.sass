@@ -57,7 +57,7 @@
    height: 450px
    position: relative
    border-radius: 8px
-   ::after
+   &:after
       content: ''
       position: absolute
       width: 100%
@@ -67,6 +67,7 @@
       right: 0
       left: 0
       background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+      z-index: 10
 .slider
    width: 728px
    &-button
@@ -76,7 +77,7 @@
       width: 30px
       height: 30px
       border: none
-      z-index: 1
+      z-index: 100
       cursor: pointer
       background-repeat: no-repeat
       background-position: center
