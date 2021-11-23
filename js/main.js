@@ -16,3 +16,12 @@ const swiper = new Swiper(".swiper", {
     onlyInViewport: false,
   },
 });
+
+// Карта
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [7.838190124409071, 98.29879180041281],
+    zoom: 15,
+  });
+}

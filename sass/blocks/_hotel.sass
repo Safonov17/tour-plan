@@ -78,6 +78,7 @@
    &-image
       width: 728px
       height: 500px
+      object-fit: cover
 .slider
    width: 728px
    &-button
@@ -99,7 +100,6 @@
       &--prev
          left: 18px
          background-image: url(../img/arrow-prev.svg)
-
 .booking
    background-color: $dark
    color: #fff
@@ -179,9 +179,8 @@
       border: none
       color: #fff
       cursor: pointer
-
 .map
    width: 347px
    height: 213px
-   background-color: #000
-   border-radius: 4px
+   border-radius: 10px
+   overflow: hidden

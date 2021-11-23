@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <header class="header">
@@ -127,7 +128,7 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel-slider">
             <!-- Slider main container -->
             <div class="swiper">
               <!-- Additional required wrapper -->
@@ -191,7 +192,7 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map"></div>
+            <div class="map" id="map"></div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->

@@ -1,6 +1,13 @@
 @media (max-width: 1200px)
    .container
       max-width: 960px
+   .slider
+      width: 590px
+   .swiper
+      width: 590px
+      &-image
+         height: 100%
+         object-fit: cover
 @media (max-width: 992px)
    .container
       max-width: 700px
@@ -31,6 +38,12 @@
             margin-left: 14px
       &-description
          word-spacing: 1px
+      &-slider
+         margin-bottom: 30px
+      &-grid
+         flex-direction: column
+      &-right
+         flex-direction: row
    .stars
       display: flex
    .star
@@ -39,13 +52,21 @@
       width: 100%
       height: 100%
       overflow: hidden
-      &-image
-         background-size: cover
    .slider
       width: 700px
       height: 450px
       overflow: hidden
-      
+   .booking
+      width: 340px
+      height: 210px
+      padding: 23px
+      &__start
+         line-height: 17px
+         word-spacing: -2px
+      &-room
+         margin-top: 9px
+   .map
+      width: 340px
 @media (max-width: 768px)
    .container
       max-width: 576px
@@ -88,9 +109,22 @@
             margin-left: 0
          &__rating
             display: none
+      &-right
+         flex-direction: column
+         min-height: 450px
+   .slider
+      width: 100%
+      height: 300px
+   .booking
+      width: 100%
+   .map
+      width: 100%
 @media (max-width: 576px)
    .container
       width: 87%
+   .slider
+      width: 100%
+      height: 250px
 @media (min-width: 320px) and (max-width: 480px)
    .logo
       width: 100px
@@ -106,6 +140,11 @@
             margin-left: 1px
       &-name
          font-size: 23.6px
+      &-slider
+         margin-bottom: 20px
+         width: 100%
+      &-right
+         min-height: 444px
    .star
       width: 6px
       height: 6px
@@ -117,7 +156,7 @@
       &-image
          height: 179px
    .slider
-      width: 278px
+      width: 100%
       height: 179px
       overflow: hidden
       &-button
