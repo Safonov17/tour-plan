@@ -25,6 +25,13 @@
       font-size: 12px
       line-height: 15px
       margin: 0
+   &-grid
+      display: flex
+      justify-content: space-between
+   &-right
+      display: flex
+      flex-direction: column
+      justify-content: space-between
 .stars
    flex-basis: 100%
 .offer
@@ -69,7 +76,7 @@
       background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
       z-index: 10
    &-image
-      width: 700px
+      width: 728px
       height: 500px
 .slider
    width: 728px
@@ -92,3 +99,89 @@
       &--prev
          left: 18px
          background-image: url(../img/arrow-prev.svg)
+
+.booking
+   background-color: $dark
+   color: #fff
+   width: 350px
+   min-height: 210px
+   border-radius: 8px
+   padding: 28px
+   &__info
+      display: flex
+      justify-content: space-between
+      margin-bottom: 9px
+   &__price
+      display: flex
+      flex-direction: column
+   &__start
+      font-weight: normal
+      font-size: 10px
+      line-height: 14px
+   &__pricetag
+      font-weight: 800
+      font-size: 24px
+      line-height: 33px
+   &__per-room
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+   &-room
+      display: flex
+      flex-direction: column
+      max-width: 81px
+      margin-top: 4px
+   &__text
+      display: flex
+      justify-content: space-between
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+      display: flex
+      align-items: center
+      margin-bottom: 8px
+      &:last-child
+         margin-bottom: 0
+   &__icon
+      margin-right: 9px
+   &__description
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+   &__call-center
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 17px
+   &__heading
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+   &__number
+      display: flex
+      align-items: center
+      justify-content: space-between
+      color: #fff
+   &__phone-icon
+      margin-right: 8px
+   &__num
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+   &__button
+      width: 100%
+      min-height: 45px
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      border-radius: 4px
+      background-color: $primary-color
+      border: none
+      color: #fff
+      cursor: pointer
+
+.map
+   width: 347px
+   height: 213px
+   background-color: #000
+   border-radius: 4px
