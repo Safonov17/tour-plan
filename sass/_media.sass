@@ -35,6 +35,17 @@
       display: flex
    .star
       margin-right: 3px
+   .swiper
+      width: 100%
+      height: 100%
+      overflow: hidden
+      &-image
+         background-size: cover
+   .slider
+      width: 700px
+      height: 450px
+      overflow: hidden
+      
 @media (max-width: 768px)
    .container
       max-width: 576px
@@ -89,6 +100,7 @@
    .hotel
       padding: 0 0 40px
       &-info
+         padding-bottom: 38px
          &__offer
             padding: 3px 9px 4px
             margin-left: 1px
@@ -101,3 +113,18 @@
    .stars
       max-width: 47px
       margin-top: 4px
+   .swiper
+      &-image
+         height: 179px
+   .slider
+      width: 278px
+      height: 179px
+      overflow: hidden
+      &-button
+         width: 12px
+         height: 12px
+         background-size: 7px
+         &--next
+            right: 7px
+         &--prev
+            left: 7px
