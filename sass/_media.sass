@@ -19,14 +19,14 @@
       &__search
          margin-left: 47px
       &__menu
-         padding: 22px 0
+         padding: 21px 0
          justify-content: space-around
          .menu-link
             font-size: 12px
             line-height: 15px  
    .search
       &__input
-         max-width: 340px
+         max-width: 338px
          padding-left: 23px
    .breadcrumb-list__item:not(:last-child)::after 
       content: '/'
@@ -36,6 +36,8 @@
       &-info
          &__offer
             margin-left: 14px
+         &__rating
+            margin-bottom: 0
       &-description
          word-spacing: 1px
       &-slider
@@ -61,10 +63,16 @@
       height: 210px
       padding: 23px
       &__start
-         line-height: 17px
+         line-height: 20px
          word-spacing: -2px
+         margin-bottom: -3px
       &-room
          margin-top: 9px
+         margin-right: -5px
+      &__info
+         margin-bottom: 10px
+      &__heading
+         letter-spacing: -0.3px
    .map
       width: 340px
 @media (max-width: 768px)
@@ -152,6 +160,7 @@
    .stars
       max-width: 47px
       margin-top: 4px
+      margin-right: 15px
    .swiper
       &-image
          height: 179px
