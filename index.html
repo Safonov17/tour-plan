@@ -127,39 +127,36 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider hotel-slider">
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="swiper hotel-slider hotel__slider">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">
-                  <img src="img/Slider-1.jpg" alt="slide" class="swiper-image" />
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="slider-image" src="img/Slider-1.jpg" alt="slide" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="img/Slider-2.jpg" alt="slide" class="swiper-image" />
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="slider-image" src="img/Slider-2.jpg" alt="slide" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="img/Slider-3.jpg" alt="slide" class="swiper-image" />
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="slider-image" src="img/Slider-3.jpg" alt="slide" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="img/Slider-4.jpg" alt="slide" class="swiper-image" />
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="slider-image" src="img/Slider-4.jpg" alt="slide" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="img/Slider-5.jpg" alt="slide" class="swiper-image" />
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="slider-image" src="img/Slider-5.jpg" alt="slide" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="img/Slider-6.jpg" alt="slide" class="swiper-image" />
+                <div class="swiper-slide hotel-slider__item">
+                  <img class="slider-image" src="img/Slider-6.jpg" alt="slide" />
                 </div>
               </div>
 
               <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <button class="hotel-slider__button hotel-slider__button--prev"></button>
+              <button class="hotel-slider__button hotel-slider__button--next"></button>
             </div>
             <!-- /.swiper-container -->
-          </div>
-          <!-- /.slider -->
           <div class="hotel-right">
             <div class="booking">
               <div class="booking__info">
@@ -202,9 +199,10 @@
     </section>
     <!-- /.hotel -->
 
+    
     <section class="newsletter">
       <div class="container">
-        <div class="newsletter-wrapper">
+        <div class="newsletter-wrapper parallax">
           <div class="newslatter-title">
             <h2 class="newsletter-title">
               subscribe to our
@@ -218,28 +216,41 @@
         </div>
       </div>
     </section>
+    
 
     <section class="reviews">
       <div class="container">
-        <h2 class="section__title">What people think about us</h2>
+        <h2 class="reviews__title">What people think about us</h2>
         <!-- Slider main container -->
-        <div class="swiper-container reviews-slider">
+        <div class="swiper reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img src="img/review-avatar.jpg" alt="" class="reviews-slider__avatar">
+                  <img class="reviews-slider__avatar" src="img/review-avatar.jpg" alt="Photo: Megan Fox">
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img class="star" src="img/star.svg" alt="star" />
+                    <img class="star" src="img/star.svg" alt="star" />
+                    <img class="star" src="img/star.svg" alt="star" />
+                    <img class="star" src="img/star.svg" alt="star" />
+                    <img class="star" src="img/star.svg" alt="star" />
+                  </div>
                 </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It&nbsp;was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome&nbsp;us very well. Issue was only that Lift was not in&nbsp;working and we&nbsp;were allotted to&nbsp;3rd floor and amenities articles were in&nbsp;corner of&nbsp;gallery which were giving bad feeling. Breakfast was good and support of&nbsp;the staff was also very nice. Location is&nbsp;not good as&nbsp;per atmosphere, it&nbsp;is&nbsp;very nearby most of&nbsp;the popular places but self location in&nbsp;a&nbsp;narrow street is&nbsp;not good. Overall it&nbsp;was a&nbsp;good experience and could recommend.
+                </p>
               </div>
               <!-- /.reviews-slider__item -->
             </div>
             <!-- /.swiper-slide -->
           </div>
           <!-- /.swiper-wrapper -->
-
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <button class="reviews-slider__button reviews-slider__button--prev"></button>
+          <button class="reviews-slider__button reviews-slider__button--next"></button>
       </div>
       <!-- /.reviews-slider -->
     </section>

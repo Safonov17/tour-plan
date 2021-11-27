@@ -1,17 +1,28 @@
-const swiper = new Swiper(".swiper", {
+const hotelSwiper = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  effect: "coverflow",
   // Кнопки навигации
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
   keyboard: {
     enabled: true,
     onlyInViewport: false,
+  },
+});
+
+const reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+  // Кнопки навигации
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
 });
 
