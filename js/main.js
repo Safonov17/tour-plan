@@ -1,10 +1,9 @@
 const hotelSwiper = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  // },
-  effect: "coverflow",
+  autoplay: {
+    delay: 3000,
+  },
   // Кнопки навигации
   navigation: {
     nextEl: ".hotel-slider__button--next",
@@ -47,16 +46,3 @@ function init() {
 $(".parallax-window").parallax({ imageSrc: "img/newsletter-bg.jpg" });
 
 // Мягкий скролл
-
-$(document).bind("mousewheel", function (e) {
-  var nt = $(document.body).scrollTop() - e.deltaY * e.deltaFactor * 100;
-  e.preventDefault();
-  e.stopPropagation();
-  $(document.body).stop().animate(
-    {
-      scrollTop: nt,
-    },
-    100,
-    "easeInOutCubic"
-  );
-});

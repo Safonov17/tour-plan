@@ -34,12 +34,15 @@
       justify-content: space-between
    &-slider
       width: 728px
+      margin-left: 0
+      border-radius: 8px
       &__item
          width: 728px
          height: 450px
          position: relative
          border-radius: 8px
          overflow: hidden
+         background-size: cover
          &:after
             content: ''
             position: absolute
@@ -74,6 +77,10 @@
          &--prev
             left: 18px
             background-image: url(../img/arrow-prev.svg)
+   .slider
+      &-image
+         max-width: 100%
+         min-height: 100%
 
 .stars
    display: flex
