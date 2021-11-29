@@ -41,3 +41,7 @@ function init() {
   myMap.geoObjects.add(placemark);
   placemark.balloon.open();
 }
+
+// Код для parallax эффекта
+
+$(".parallax-window").parallax({ imageSrc: "img/newsletter-bg.jpg" });
