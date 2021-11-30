@@ -41,6 +41,7 @@
          word-spacing: 1px
       &-slider
          margin-bottom: 30px
+         margin-right: 0
       &-grid
          flex-direction: column
       &-right
@@ -68,8 +69,13 @@
       width: 340px
    .newsletter
       padding: 72px 0 73px
+      &-title
+         max-width: 242px
    .reviews
+      padding: 37px 0 70px
       &__title
+         font-size: 30px
+         margin-bottom: 46px
       &-slider
          &__item
             max-width: 580px
@@ -78,10 +84,14 @@
          &__profile
          &__date
          &__text
-         &__button--prev
-         &__button--next
-      
+         &__button
+            &--prev
+               left: 1px
+         &__button
+            &--next
+               right: 0
    .activities
+      padding: 10px 0 98px
       &-wrapper
          flex-wrap: wrap
    .card
@@ -134,7 +144,9 @@
       &-right
          flex-direction: column
          min-height: 450px
-   .slider
+      &-slider
+         &__item
+            height: 370px
    .booking
       width: 100%
    .map
@@ -166,7 +178,15 @@
 @media (max-width: 576px)
    .container
       width: 87%
-   .slider
+   .reviews
+      padding: 37px 0 20px
+      &__title
+         max-width: 325px
+         margin: auto
+         margin-bottom: 20px
+      &-slider
+         &__item
+            max-width: 405px
    .card
       width: 48%
       height: 255px
@@ -258,4 +278,3 @@
          font-size: 18px
          line-height: 23px
          margin-bottom: 41px
-      

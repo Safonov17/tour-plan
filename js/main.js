@@ -30,7 +30,7 @@ ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map("map", {
     center: [7.838190124409071, 98.29879180041281],
-    zoom: 14,
+    zoom: 17,
     controls: ["smallMapDefaultSet"],
   });
   var placemark = new ymaps.Placemark([7.838190124409071, 98.29879180041281], {
