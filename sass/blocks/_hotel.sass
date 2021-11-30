@@ -33,8 +33,8 @@
       flex-direction: column
       justify-content: space-between
    &-slider
-      width: 728px
       margin-left: 0
+      margin-right: 30px
       border-radius: 8px
       &__item
          width: 728px
@@ -55,8 +55,7 @@
             background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
             z-index: 10
       &-image
-         width: 728px
-         height: 500px
+         width: 100%
          object-fit: cover
       &__button
          position: absolute
@@ -77,10 +76,6 @@
          &--prev
             left: 18px
             background-image: url(../img/arrow-prev.svg)
-   .slider
-      &-image
-         max-width: 100%
-         min-height: 100%
 
 .stars
    display: flex
