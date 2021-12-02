@@ -455,27 +455,33 @@
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/map-marker.svg" alt="Icon: map" />
                 </div>
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                <span class="footer__text-details"
+                  >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span
+                >
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/phone-call.svg" alt="Icon: phone call" />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <span class="footer__text-details">
+                  Tel (business hours) : <a class="footer__text-number" href="tel:269 1500">269 1500</a> <br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52-56-61-38" class="footer__text-number">52-56-61-38</a> (08:00 am – 20:00 pm) <br />
+                  Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__text-number">52-56-61-38</a> (08:00 am
+                  – 14:00 pm)
+                </span>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/email.svg" alt="Icon: email" />
                 </div>
-                cherly.lawson@example.com
+                <a class="footer__text-details" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contacts-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
             <form class="footer__form" action="#">
               <input class="input footer__input" type="text" placeholder="Your Full Name*" />
               <input class="input footer__input" type="text" placeholder="Phone Number*" />
@@ -487,6 +493,17 @@
           <!-- /.footer__contacts-form -->
         </div>
         <!-- /.footer__wrapper -->
+        <div class="legal">
+          <div class="legal__documents">
+            <a href="#" class="legal__link">Disclaimer</a>
+            <a href="#" class="legal__link">Conditions of use</a>
+            <a href="#" class="legal__link">Cancellation policy</a>
+          </div>
+          <div class="legal__payments">
+            <img src="img/payments.svg" alt="Icon: payments method" />
+          </div>
+        </div>
+        <!-- /.legal -->
       </div>
       <!-- /.container -->
     </footer>
