@@ -6,6 +6,33 @@
    .card
       width: 230px
       height: 230px
+   .footer
+      padding-top: 25px
+      &-wrapper
+         grid-template-columns: 201px 278px 202px
+         grid-template-rows: 139px
+      &__logo
+         grid-row: 1/2
+         width: 95px
+      &__categories
+         grid-row: 2/3
+      &__legal
+      &__additional
+      &__social-network
+         grid-row: 1/2
+         grid-column: span 4
+         align-self: center
+      &__contact-details
+            grid-column: span 4
+            grid-row: 3
+            width: 500px
+      &__contacts-form
+            grid-column: span 2
+            grid-row: 4
+      &__input
+         flex-basis: 100%
+      &__contact-details 
+         width: 410px
 @media (max-width: 992px)
    .container
       max-width: 700px
