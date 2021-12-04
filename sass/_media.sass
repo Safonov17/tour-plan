@@ -46,7 +46,7 @@
       &__menu
          padding: 21px 0
          justify-content: space-around
-         .menu-link
+         &-link
             font-size: 12px
             line-height: 15px  
    .search
@@ -128,12 +128,61 @@
       &__title
          margin-right: 81px
 @media (max-width: 768px)
+   body
+      padding-top: 78px
    .container
       max-width: 576px
       width: 91%
    .header
-      &__search, &__menu, &__user
+      &-fixed
+         position: fixed
+         top: 0
+         left: 0
+         right: 0
+         z-index: 99
+      &__bottom
          display: none
+         position: fixed
+         left: 0
+         right: 0
+         bottom: 0
+         top: 78px
+         padding-top: 30px
+         &-visible
+            display: block
+      &__menu
+         &-list
+            display: flex
+            flex-direction: column
+            align-items: center
+         &-item
+            margin-bottom: 20px
+            &__visible
+               display: block
+               text-align: center
+               margin-left: 0
+      &__search, &__user
+         &-hidden
+            display: none
+         &-visible
+            display: flex
+      &__search
+         margin-bottom: 20px
+         margin-left: 0
+      &__user-visible
+         flex-direction: column
+   .search__input
+      max-width: 80vw
+      padding-left: 23px
+      margin: 0 10px 0
+      &__user
+         flex-direction: column
+         justify-content: center
+   .user__name-light
+      color: #fff
+      margin-left: 0
+      margin-bottom: 20px
+      margin-top: 10px
    .logo
       width: 133px
    .menu-button
@@ -228,6 +277,8 @@
    .header
       &__top 
          padding-top: 23px
+      &__bottom
+         top: 71px
    .hotel
       padding: 0 0 37px
       &-info

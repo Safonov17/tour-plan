@@ -15,19 +15,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header-fixed">
       <div class="container">
         <div class="header__top">
           <a class="logo" href="#">
             <img class="logo__image" src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" />
           </a>
-          <form class="search header__search" action="#">
+          <form class="search header__search header__search-hidden" action="#">
             <input class="search__input" type="text" placeholder="Search Location" />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user header__user">
+          <a href="#" class="user header__user header__user-hidden">
             <img class="user__avatar" src="img/user-avatar.jpg" alt="Avatar: Nathan" />
             <span class="user__name">Nathan</span>
           </a>
@@ -44,39 +44,42 @@
       <div class="header__bottom">
         <div class="container">
           <nav class="header__menu">
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#">All Deals</a>
+            <ul class="header__menu-list">
+              <li class="header__menu-item header__menu-item__visible">
+                <a href="#" class="user header__user header__user-visible">
+                  <img class="user__avatar" src="img/user-avatar.jpg" alt="Avatar: Nathan" />
+                  <span class="user__name-light">Nathan</span>
+                </a>
+                <!-- /.user -->
               </li>
-            </ul>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#">Hotels</a>
+              <li class="header__menu-item header__menu-item__visible">
+                <form class="search header__search header__search-visible" action="#">
+                  <input class="search__input" type="text" placeholder="Search Location" />
+                  <button class="search__button">
+                    <img src="img/search.svg" alt="Icon: search" />
+                  </button>
+                </form>
               </li>
-            </ul>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#">Activities</a>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">All Deals</a>
               </li>
-            </ul>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#">Hotel Day Packages</a>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Hotels</a>
               </li>
-            </ul>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#">Restaurants</a>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Activities</a>
               </li>
-            </ul>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#">Events</a>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Hotel Day Packages</a>
               </li>
-            </ul>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#">Rodrigues</a>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Restaurants</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Events</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Rodrigues</a>
               </li>
             </ul>
           </nav>
@@ -466,11 +469,11 @@
                   <img class="footer__icon" src="img/phone-call.svg" alt="Icon: phone call" />
                 </div>
                 <span class="footer__text-details">
-                  Tel (business hours) : <a class="footer__text-number" href="tel:269 1500">269 1500</a> <br />
+                  Tel (business hours) : <a class="footer__text-number" href="tel:2691500">269 1500</a> <br />
                   Tel (hotline) Monday - Saturday:
-                  <a href="tel:52-56-61-38" class="footer__text-number">52-56-61-38</a> (08:00 am – 20:00 pm) <br />
-                  Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__text-number">52-56-61-38</a> (08:00 am
-                  – 14:00 pm)
+                  <a href="tel:52566138" class="footer__text-number">52-56-61-38</a> (08:00 am – 20:00 pm) <br />
+                  Tel (hotline) Sunday: <a href="tel:52566138" class="footer__text-number">52-56-61-38</a> (08:00 am –
+                  14:00 pm)
                 </span>
               </li>
               <li class="footer__item footer__item--mb-2">

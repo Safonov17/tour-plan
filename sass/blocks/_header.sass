@@ -12,14 +12,20 @@
       background-color: #0A223D
    &__menu
       display: flex
-      align-items: center
+      flex-direction: column
       justify-content: space-between
       padding: 31px 0
       text-transform: uppercase
       font-weight: bold
       font-size: 14px
       line-height: 18px
-      .menu-link
+      &-list
+         display: flex
+         justify-content: space-around
+      &-item
+         &__visible
+            display: none
+      &-link
          color: #fff
 .logo
    width: 177px

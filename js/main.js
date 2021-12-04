@@ -45,4 +45,9 @@ function init() {
 
 $(".parallax-window").parallax({ imageSrc: "img/newsletter-bg.jpg" });
 
-// Мягкий скролл
+// меню
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document.querySelector(".header__bottom").classList.toggle("header__bottom-visible");
+});
