@@ -18,7 +18,7 @@
     <header class="header header-fixed">
       <div class="container">
         <div class="header__top">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <img class="logo__image" src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" />
           </a>
           <form class="search header__search header__search-hidden" action="#">
@@ -215,8 +215,8 @@
                 <span class="newsletter-title__strong">Newsletter</span>
               </h2>
             </div>
-            <form class="subscribe newsletter__subscribe" action="#">
-              <input class="subscribe__input" type="text" placeholder="Your email address" />
+            <form class="subscribe newsletter__subscribe" method="POST" action="send.php">
+              <input class="subscribe__input" type="text" placeholder="Your email address" name="email" />
               <button class="subscribe__button">Send</button>
             </form>
           </div>
