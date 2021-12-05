@@ -487,10 +487,10 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contacts-form">
             <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
-            <form class="footer__form" action="#">
-              <input class="input footer__input" type="text" placeholder="Your Full Name*" />
-              <input class="input footer__input" type="text" placeholder="Phone Number*" />
-              <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+            <form class="footer__form" method="POST" action="send.php">
+              <input class="input footer__input" type="text" placeholder="Your Full Name*" name="name" />
+              <input class="input footer__input" type="text" placeholder="Phone Number*" name="phone" />
+              <textarea class="footer__message" placeholder="Message" name="message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
