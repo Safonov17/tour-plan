@@ -127,6 +127,9 @@
       margin-bottom: 20px
       &__title
          margin-right: 81px
+   .footer
+      &-wrapper
+         grid-template-columns: 156px 250px 192px
 @media (max-width: 768px)
    body
       padding-top: 78px
@@ -252,6 +255,22 @@
       height: 280px
       &__title
          margin-right: 34px
+   .footer
+      &-wrapper
+         grid-template-columns: 154px 249px 202px
+      &__categories
+         grid-column: span 1
+      &__additional
+         grid-row: 2/3
+      &__legal
+         grid-row: 3/4
+         grid-column: span 2
+      &__contact-details
+         grid-row: 4/5
+      &__contacts-form
+         grid-row: 5/6
+   .legal__payments
+      margin-left: 19vw
 @media (max-width: 576px)
    .container
       width: 87%
@@ -269,6 +288,52 @@
       height: 255px
       &__title
          margin-right: 20px
+   .footer
+      padding-bottom: 21px
+      &-wrapper
+         grid-template-columns: 1fr
+      &__social-network
+         grid-row: 2/3
+         grid-column: span 1
+         flex-direction: column
+         align-items: flex-start
+      &__social-links
+         margin-right: 12px
+         margin-top: 22px
+      &__categories
+         grid-row: 5/6
+      &__additional
+         grid-row: 4/5
+         grid-column: span 1
+      &__legal
+         grid-row: 3/4
+         grid-column: span 1
+      &__contact-details
+         grid-row: 6/7
+         grid-column: span 1
+         width: 83vw
+      &__contacts-form
+         grid-row: 7/8
+         width: 80vw
+      &__form-forflex
+         display: flex
+         flex-direction: column
+      &__info
+         order: -1
+         margin-bottom: 15px
+   .legal
+      flex-direction: column
+      align-items: flex-start
+      margin-top: 30px
+      &__documents
+         width: 87vw
+         display: flex
+         justify-content: space-between
+      &__link
+         margin-right: 0
+      &__payments
+         margin-left: 0
+         margin-top: 10px
 @media (min-width: 320px) and (max-width: 480px)
    .logo
       width: 100px
@@ -294,6 +359,9 @@
          margin: 0
       &__button
          cursor: pointer
+   .breadcrumb
+      &-list
+         padding-top: 10px
    .hotel
       padding: 0 0 37px
       &-info
@@ -302,6 +370,7 @@
             padding: 3px 9px 4px
       &-name
          font-size: 23.9px
+         margin-top: 1px
       &-slider
          margin-bottom: 20px
          margin-right: 1px
@@ -378,6 +447,7 @@
          margin-bottom: 41px
    .activities
       padding-top: 15px
+      padding-bottom: 39px
       &__title
          font-size: 18px
          margin-bottom: 32px
@@ -385,3 +455,23 @@
       width: 280px
       height: 255px
       margin-bottom: 23px
+   .footer
+      padding-top: 53px
+      &__title
+         margin-top: 8px
+         &--mb-4
+            margin-top: 18px
+            margin-bottom: 15px
+      &--inline
+         margin-top: 6px
+      &__icon-wrapper
+         min-width: 30px
+      &__text
+         &-details
+            margin-bottom: 5px
+      &__contacts-form
+         width: 87vw
+      &__message
+         margin-bottom: 15px
+      &__legal-documents
+            width: 87vw
