@@ -40,12 +40,14 @@
       width: 134px
    .header
       &__top
-         padding: 31px 0 30px
+         padding: 30px 0
       &__search
          margin-left: 47px
       &__menu
          padding: 21px 0
          justify-content: space-around
+         &-list
+            justify-content: space-around
          &-link
             font-size: 12px
             line-height: 15px  
@@ -119,7 +121,7 @@
             &--next
                right: 0
    .activities
-      padding: 28px 0 98px
+      padding: 12px 0 51px
       &-wrapper
          flex-wrap: wrap
    .card
@@ -128,8 +130,43 @@
       &__title
          margin-right: 81px
    .footer
+      padding-top: 65px
+      padding-bottom: 28px
       &-wrapper
-         grid-template-columns: 156px 250px 192px
+         grid-template-columns: 177px 279px 192px
+         grid-template-rows: 147px 247px
+      &__logo
+         width: 95px
+         height: 124px
+      &__title
+         &--mb-3 
+            margin-bottom: 24px
+         &--mb-4 
+            margin-bottom: 35px
+         &--inline
+            margin: 0 43px 0 10px
+      &__social-network
+         margin-left: -23px
+         margin-top: -10px
+      &__contact-details
+         width: 480px
+         margin-bottom: 21px
+      &__text
+         margin-bottom: 22px
+      &__icon-wrapper
+         padding-left: 4px
+      &__contacts-form
+         width: 78%
+         grid-column: span 3
+      &__input
+         flex-basis: 47%
+      &__form-forflex
+         display: flex
+         align-items: center
+         justify-content: space-between
+         width: 100%
+   .legal
+      margin-top: 56px
 @media (max-width: 768px)
    body
       padding-top: 78px
@@ -371,7 +408,7 @@
             padding: 3px 9px 4px
       &-name
          font-size: 23.9px
-         margin-top: 1px
+         margin-top: 11px
       &-slider
          margin-bottom: 20px
          margin-right: 1px
@@ -453,18 +490,25 @@
          font-size: 18px
          margin-bottom: 32px
    .card
-      width: 280px
+      width: 100%
       height: 255px
       margin-bottom: 23px
    .footer
-      padding-top: 53px
+      padding-top: 60px
+      &-wrapper
+         grid-template-rows: 153px 60px 142px 182px 228px 363px
+      &__social-network
+         margin-left: 0
+         margin-bottom: 6px
+      &__social
+         &-links
       &__title
-         margin-top: 8px
+         margin-bottom: 16px
          &--mb-4
             margin-top: 18px
             margin-bottom: 15px
-      &--inline
-         margin-top: 6px
+         &--inline
+            margin: 0 43px 0 0
       &__icon-wrapper
          min-width: 30px
       &__text
@@ -472,7 +516,11 @@
             margin-bottom: 5px
       &__contacts-form
          width: 87vw
+      &__input
+         flex-basis: 100%
       &__message
          margin-bottom: 15px
+      &__form-forflex
+         align-items: flex-start
       &__legal-documents
-            width: 87vw
+         width: 87vw
