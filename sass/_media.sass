@@ -167,6 +167,9 @@
          width: 100%
    .legal
       margin-top: 56px
+   .modal
+      &__dialog
+         padding: 33px 60px
 @media (max-width: 768px)
    body
       padding-top: 78px
@@ -309,6 +312,21 @@
          grid-row: 5/6
    .legal__payments
       margin-left: 19vw
+   .modal
+      &__dialog
+         padding: 33px 45px
+      &__input
+         padding: 11px 15px
+      &__button
+         padding: 11px 0
+         width: 100%
+      &__form
+         &-forflex
+            flex-direction: column
+            align-items: flex-start
+      &__info
+         order: -1
+         margin-bottom: 5px
 @media (max-width: 576px)
    .container
       width: 87%
@@ -372,6 +390,9 @@
       &__payments
          margin-left: 0
          margin-top: 10px
+   .modal
+      &__dialog
+         width: 65vw
 @media (min-width: 320px) and (max-width: 480px)
    .logo
       width: 100px
@@ -524,3 +545,10 @@
          align-items: flex-start
       &__legal-documents
          width: 87vw
+   .modal
+      &__dialog
+         width: 75vw
+         padding: 20px 23px
+      &__close
+         top: 10px
+         right: 10px
