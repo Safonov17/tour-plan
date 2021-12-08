@@ -73,7 +73,6 @@ $(document).ready(function () {
   }
 
   // Обработка форм
-<<<<<<< HEAD
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -93,7 +92,4 @@ $(document).ready(function () {
   });
 
   AOS.init();
-=======
-  $(".modal__form").validate();
->>>>>>> f65a3380e271c57f6a5c0aac18ba3f1644916858
 });
