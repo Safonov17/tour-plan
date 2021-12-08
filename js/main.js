@@ -92,6 +92,9 @@ $(document).ready(function () {
   });
 
   AOS.init({
-    disable: 'phone', 'tablet', 'mobile'
+    disable: function () {
+      var maxWidth = 800;
+      return window.innerWidth < maxWidth;
+    },
   });
 });
