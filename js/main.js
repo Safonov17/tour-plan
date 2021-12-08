@@ -92,4 +92,6 @@ $(document).ready(function () {
   });
 
   AOS.init({
+    disable: 'phone', 'tablet', 'mobile'
+  });
 });
