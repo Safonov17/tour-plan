@@ -43,7 +43,6 @@
       text-align: center
       margin-bottom: 10px
    &__form
-      color: #333333
    &__input
       width: 100%
       font-style: normal
@@ -54,7 +53,7 @@
       border: none
       border-radius: 4px
       padding: 18px 23px
-      margin-bottom: 15px
+      margin-top: 15px
       &:focus
          color: #333333
    &__message
@@ -68,7 +67,7 @@
       resize: none
       border-radius: 4px
       padding: 18px 23px
-      margin-bottom: 10px
+      margin-top: 10px
       &:focus
          color: #333333
    &__form-forflex
@@ -85,11 +84,15 @@
       color: #fff
       background-color: $primary-color
       border-radius: 4px
-      padding: 17px 0
       cursor: pointer
+      padding: 17px 0
+      margin-top: 15px
    &__info
       font-style: normal
       font-weight: bold
       font-size: 12px
       line-height: 15px
       color: #E0E0E0
+.invalid
+   color: $primary-color
+   border-bottom: 1px solid $primary-color

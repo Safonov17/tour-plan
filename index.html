@@ -12,12 +12,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header header-fixed">
       <div class="container">
-        <div class="header__top">
+        <div class="header__top" data-aos="fade-up">
           <a class="logo" href="index.html">
             <img class="logo__image" src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" />
           </a>
@@ -60,25 +61,25 @@
                   </button>
                 </form>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item" data-aos="fade-up">
                 <a class="header__menu-link" href="#">All Deals</a>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item" data-aos="fade-up">
                 <a class="header__menu-link" href="#">Hotels</a>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item" data-aos="fade-up">
                 <a class="header__menu-link" href="#">Activities</a>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item" data-aos="fade-up">
                 <a class="header__menu-link" href="#">Hotel Day Packages</a>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item" data-aos="fade-up">
                 <a class="header__menu-link" href="#">Restaurants</a>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item" data-aos="fade-up">
                 <a class="header__menu-link" href="#">Events</a>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item" data-aos="fade-up">
                 <a class="header__menu-link" href="#">Rodrigues</a>
               </li>
             </ul>
@@ -109,7 +110,7 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <div class="stars">
+              <div class="stars" data-aos="fade-right" data-aos-duration="3000">
                 <img class="star" src="img/star.svg" alt="star" />
                 <img class="star" src="img/star.svg" alt="star" />
                 <img class="star" src="img/star.svg" alt="star" />
@@ -190,7 +191,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button" data-toggle="modal">View Other Options</button>
+              <button class="button booking__button" data-toggle="modal" data-aos="fade-top" data-aos-duration="3000">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map" id="map"></div>
@@ -210,13 +213,13 @@
         <div class="container">
           <div class="newsletter-wrapper">
             <div class="newslatter-title">
-              <h2 class="newsletter-title">
+              <h2 class="newsletter-title" data-aos="fade-right">
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
               </h2>
             </div>
-            <form class="subscribe newsletter__subscribe" method="POST" action="send.php">
-              <input class="subscribe__input" type="text" placeholder="Your email address" name="email" />
+            <form class="form subscribe newsletter__subscribe" data-aos="fade-left" method="POST" action="send.php">
+              <input class="subscribe__input" type="email" placeholder="Your email address" name="email" required />
               <button class="subscribe__button">Send</button>
             </form>
           </div>
@@ -329,25 +332,25 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="3000">
             <img class="card__image" src="img/activity-1.jpg" alt="The curious corner of chamarel" />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="3000">
             <img class="card__image" src="img/activity-2.jpg" alt="Gymkhana club golf course" />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="3000">
             <img class="card__image" src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" />
             <h3 class="card__title">Tamarind falls hiking trip&nbsp;&mdash; full day</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="3000">
             <img class="card__image" src="img/activity-4.jpg" alt="The blue marine discovery quest" />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
@@ -432,7 +435,7 @@
             <!-- ./footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
+          <div class="footer__list">
             <h3 class="footer__title">legal information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -488,9 +491,23 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contacts-form">
             <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
-            <form class="footer__form" method="POST" action="send.php">
-              <input class="input footer__input" type="text" placeholder="Your Full Name*" name="name" />
-              <input class="input footer__input" type="text" placeholder="Phone Number*" name="phone" />
+            <form
+              class="footer__form form"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              method="POST"
+              action="send.php"
+            >
+              <div class="footer__form-group">
+                <div class="footer__input-group">
+                  <input class="input footer__input" type="name" placeholder="Your Full Name*" name="name" required />
+                </div>
+                <div class="footer__input-group">
+                  <input class="input footer__input" type="tel" placeholder="Phone Number*" name="phone" required />
+                </div>
+              </div>
+              <!-- /.footer__form-group -->
               <textarea class="footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__form-forflex">
                 <button class="button footer__button">Send</button>
@@ -499,19 +516,22 @@
             </form>
           </div>
           <!-- /.footer__contacts-form -->
+          <div class="legal">
+            <div class="legal__wrapper">
+              <div class="legal__documents">
+                <a href="#" class="legal__link">Disclaimer</a>
+                <a href="#" class="legal__link">Conditions of use</a>
+                <a href="#" class="legal__link">Cancellation policy</a>
+              </div>
+              <div class="legal__payments">
+                <img src="img/payments.svg" alt="Icon: payments method" />
+              </div>
+            </div>
+            <!-- /.legal__wrapper -->
+          </div>
+          <!-- /.legal -->
         </div>
         <!-- /.footer__wrapper -->
-        <div class="legal">
-          <div class="legal__documents">
-            <a href="#" class="legal__link">Disclaimer</a>
-            <a href="#" class="legal__link">Conditions of use</a>
-            <a href="#" class="legal__link">Cancellation policy</a>
-          </div>
-          <div class="legal__payments">
-            <img src="img/payments.svg" alt="Icon: payments method" />
-          </div>
-        </div>
-        <!-- /.legal -->
       </div>
       <!-- /.container -->
     </footer>
@@ -524,10 +544,10 @@
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form class="modal__form" method="POST" action="send.php">
-          <input class="input modal__input" type="text" placeholder="Your Full Name*" name="name" />
-          <input class="input modal__input" type="text" placeholder="Phone Number*" name="phone" />
-          <input class="input modal__input" type="text" placeholder="Email*" name="email" />
+        <form class="modal__form form" method="POST" action="send.php">
+          <input class="input modal__input" type="text" placeholder="Your Full Name*" name="name" required />
+          <input class="input modal__input" type="tel" placeholder="Phone Number*" name="phone" required />
+          <input class="input modal__input" type="email" placeholder="Email*" name="email" required />
           <textarea class="modal__message" placeholder="Message" name="message"></textarea>
           <div class="modal__form-forflex">
             <button class="button modal__button">Send</button>
@@ -544,6 +564,8 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=74cd8f3b-fc88-4e16-91da-c80027afc006&lang=ru_RU"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
