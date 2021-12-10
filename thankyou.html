@@ -125,7 +125,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <a href="index.html" class="footer__logo-link">
-            <img class="footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+            <img src="img/vertical-logo.svg" alt="Logo" class="footer__logo" />
           </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">all categories</h3>
@@ -184,13 +184,13 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="https://en-gb.facebook.com/" target="_blank">
                 <img src="img/fb.svg" alt="Icon: facebook" />
               </a>
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="https://www.youtube.com/" target="_blank">
                 <img src="img/yt.svg" alt="Icon: youtube" />
               </a>
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="https://www.instagram.com/saffrontdev/" target="_blank">
                 <img src="img/inst.svg" alt="Icon: instagram" />
               </a>
             </div>
@@ -253,9 +253,37 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contacts-form">
             <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
-            <form class="footer__form" method="POST" action="send.php">
-              <input class="input footer__input" type="text" placeholder="Your Full Name*" name="name" />
-              <input class="input footer__input" type="text" placeholder="Phone Number*" name="phone" />
+            <form
+              class="footer__form form"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              method="POST"
+              action="send.php"
+            >
+              <div class="footer__form-group">
+                <div class="footer__input-group">
+                  <input
+                    class="input footer__input"
+                    type="text"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    minlength="2"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    class="input footer__input"
+                    type="tel"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    minlength="18"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- /.footer__form-group -->
               <textarea class="footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__form-forflex">
                 <button class="button footer__button">Send</button>
@@ -264,19 +292,22 @@
             </form>
           </div>
           <!-- /.footer__contacts-form -->
+          <div class="legal">
+            <div class="legal__wrapper">
+              <div class="legal__documents">
+                <a href="#" class="legal__link">Disclaimer</a>
+                <a href="#" class="legal__link">Conditions of use</a>
+                <a href="#" class="legal__link">Cancellation policy</a>
+              </div>
+              <div class="legal__payments">
+                <img src="img/payments.png" alt="Icon: payments method" />
+              </div>
+            </div>
+            <!-- /.legal__wrapper -->
+          </div>
+          <!-- /.legal -->
         </div>
         <!-- /.footer__wrapper -->
-        <div class="legal">
-          <div class="legal__documents">
-            <a href="#" class="legal__link">Disclaimer</a>
-            <a href="#" class="legal__link">Conditions of use</a>
-            <a href="#" class="legal__link">Cancellation policy</a>
-          </div>
-          <div class="legal__payments">
-            <img src="img/payments.svg" alt="Icon: payments method" />
-          </div>
-        </div>
-        <!-- /.legal -->
       </div>
       <!-- /.container -->
     </footer>
