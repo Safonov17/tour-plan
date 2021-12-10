@@ -13,7 +13,13 @@
          grid-template-rows: 139px
       &__logo
          grid-row: 1/2
-         width: 95px
+         width: 100%
+         height: 100%
+         margin-top: 0
+         &-link
+            grid-row: 1/2
+            width: 131px
+            height: 141px
       &__categories
          grid-row: 2/3
       &__legal
@@ -31,8 +37,6 @@
             grid-row: 4
       &__input
          flex-basis: 100%
-      &__contact-details 
-         width: 410px
 @media (max-width: 992px)
    .container
       max-width: 700px
@@ -66,8 +70,6 @@
          padding-bottom: 20px
          &__offer
             margin-left: 14px
-      &-description
-         word-spacing: 1px
       &-slider
          margin-bottom: 30px
          margin-right: 0
@@ -136,8 +138,12 @@
          grid-template-columns: 177px 279px 192px
          grid-template-rows: 147px 247px
       &__logo
-         width: 95px
-         height: 124px
+         width: 100%
+         height: 100%
+         &-link
+            width: 98px
+            height: 109px
+            margin-top: 5px
       &__title
          &--mb-3 
             margin-bottom: 24px
@@ -149,7 +155,7 @@
          margin-left: -23px
          margin-top: -10px
       &__contact-details
-         width: 480px
+         width: 500px
          margin-bottom: 21px
       &__text
          margin-bottom: 22px
@@ -166,7 +172,14 @@
          justify-content: space-between
          width: 100%
    .legal
-      margin-top: 56px
+      grid-column: 1/4
+      margin-top: 37px
+      &__wrapper
+         grid-column: 1/4
+         justify-content: space-between
+      &__payments
+         margin-left: 0
+         margin-right: -10px
    .modal
       &__dialog
          padding: 33px 60px
@@ -310,8 +323,13 @@
          grid-row: 4/5
       &__contacts-form
          grid-row: 5/6
-   .legal__payments
-      margin-left: 19vw
+         grid-column: 1/4
+   .legal
+      grid-row: 6/7
+      &__wrapper
+         grid-row: 6/7
+      &__payments
+         margin-left: 19vw
    .modal
       &__dialog
          padding: 33px 45px
@@ -348,11 +366,18 @@
       padding-bottom: 21px
       &-wrapper
          grid-template-columns: 1fr
+         grid-template-rows: min-content
+      &__title
+         &--inline
+            margin: 0 43px 0 0
       &__social-network
          grid-row: 2/3
          grid-column: span 1
          flex-direction: column
          align-items: flex-start
+         margin-left: 0
+         margin-top: 0
+         align-self: auto
       &__social-links
          margin-right: 12px
          margin-top: 22px
@@ -377,12 +402,18 @@
       &__info
          order: -1
          margin-bottom: 15px
+      &__button
+         width: 100%
    .legal
-      flex-direction: column
+      grid-auto-flow: column
+      grid-row: 8/9
       align-items: flex-start
       margin-top: 30px
+      &__wrapper
+         flex-direction: column
+         align-items: flex-start
       &__documents
-         width: 87vw
+         width: 60vw
          display: flex
          justify-content: space-between
       &__link
@@ -390,6 +421,7 @@
       &__payments
          margin-left: 0
          margin-top: 10px
+         margin-right: 0
    .modal
       &__dialog
          width: 65vw
@@ -486,19 +518,18 @@
          &__item
             max-width: 258px
          &__text
-            max-width: 220px
+            width: 221px
             line-height: 158%
+            text-align: inherit
+            letter-spacing: -0.2px
          &__profile
             margin-right: 8px
             margin-bottom: 33px
          &__button
             &--prev
                left: 39%
-         &__text
-            width: 221px
-            text-align: inherit
-            letter-spacing: -0.1px
       &__title
+         max-width: 250px
          font-style: normal
          font-weight: bold
          font-size: 18px
@@ -517,7 +548,7 @@
    .footer
       padding-top: 60px
       &-wrapper
-         grid-template-rows: 153px 60px 142px 182px 228px 363px
+         grid-template-rows: 140px 75px 140px 182px 228px 363px
       &__social-network
          margin-left: 0
          margin-bottom: 6px
@@ -539,12 +570,21 @@
          width: 87vw
       &__input
          flex-basis: 100%
+         width: 100%
       &__message
          margin-bottom: 15px
+      &__form-group
+         flex-direction: column
+         align-items: initial
       &__form-forflex
          align-items: flex-start
-      &__legal-documents
-         width: 87vw
+      &__button
+         width: 50%
+   .legal
+      grid-column: 1/2
+      margin-top: 8px
+      &__documents
+         width: 85vw
    .modal
       &__dialog
          width: 75vw
@@ -552,3 +592,6 @@
       &__close
          top: 10px
          right: 10px
+      &__message
+         min-height: 90px
+         padding: 12px 15px

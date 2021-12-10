@@ -91,10 +91,5 @@ $(document).ready(function () {
     });
   });
 
-  AOS.init({
-    disable: function () {
-      var maxWidth = 800;
-      return window.innerWidth < maxWidth;
-    },
-  });
+  AOS.init({});
 });

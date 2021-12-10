@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="preload"
-      as="font"
-    />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -111,7 +104,7 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <div class="stars" data-aos="fade-right" data-aos-duration="3000">
+              <div class="stars">
                 <img class="star" src="img/star.svg" alt="star" />
                 <img class="star" src="img/star.svg" alt="star" />
                 <img class="star" src="img/star.svg" alt="star" />
@@ -192,9 +185,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button" data-toggle="modal" data-aos="fade-top" data-aos-duration="3000">
-                View Other Options
-              </button>
+              <button class="button booking__button" data-toggle="modal">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div class="map" id="map"></div>
@@ -365,7 +356,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img class="footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+          <a href="index.html" class="footer__logo-link">
+            <img src="img/vertical-logo.svg" alt="Logo" class="footer__logo" />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">all categories</h3>
             <ul class="footer__ul">
@@ -436,7 +429,7 @@
             <!-- ./footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list">
+          <div class="footer__list footer__legal">
             <h3 class="footer__title">legal information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
