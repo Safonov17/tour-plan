@@ -91,5 +91,21 @@ $(document).ready(function () {
     });
   });
 
-  AOS.init({});
+  // Подключение маски для правильного введения номера телефона
+  $('input[type="tel"]').mask("+7 (999) 999-99-99", {
+    translation: {
+      0: {
+        pattern: /[0-9*]/,
+      },
+      clearIfNotMatch: true,
+    },
+  });
+
+  // Подключение анимации AOS
+  AOS.init({
+    disable: function () {
+      var maxWidth = 992;
+      return window.innerWidth < maxWidth;
+    },
+  });
 });

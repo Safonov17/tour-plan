@@ -15,7 +15,7 @@ if ((isset($email)) and (isset($phone))) {
     <h2>Новое обращение</h2>
     <b>Имя:</b> $name<br>
     <b>Телефон:</b> $phone<br>
-    <b>Email:</b><br>$email<br><br>
+    <b>Email:</b> $email<br><br>
     <b>Сообщение:</b><br>$message";
 }
 elseif (!isset($email)) {

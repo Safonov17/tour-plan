@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -495,10 +496,24 @@
             >
               <div class="footer__form-group">
                 <div class="footer__input-group">
-                  <input class="input footer__input" type="text" placeholder="Your Full Name*" name="name" required />
+                  <input
+                    class="input footer__input"
+                    type="text"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    minlength="2"
+                    required
+                  />
                 </div>
                 <div class="footer__input-group">
-                  <input class="input footer__input" type="tel" placeholder="Phone Number*" name="phone" required />
+                  <input
+                    class="input footer__input"
+                    type="tel"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    minlength="18"
+                    required
+                  />
                 </div>
               </div>
               <!-- /.footer__form-group -->
@@ -539,8 +554,22 @@
         </a>
         <h3 class="modal__title">Booking</h3>
         <form class="modal__form form" method="POST" action="send.php">
-          <input class="input modal__input" type="text" placeholder="Your Full Name*" name="name" required />
-          <input class="input modal__input" type="tel" placeholder="Phone Number*" name="phone" required />
+          <input
+            class="input modal__input"
+            type="text"
+            placeholder="Your Full Name*"
+            name="name"
+            minlength="2"
+            required
+          />
+          <input
+            class="input modal__input phone"
+            type="tel"
+            placeholder="Phone Number*"
+            name="phone"
+            minlength="18"
+            required
+          />
           <input class="input modal__input" type="email" placeholder="Email*" name="email" required />
           <textarea class="modal__message" placeholder="Message" name="message"></textarea>
           <div class="modal__form-forflex">
@@ -555,6 +584,7 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=74cd8f3b-fc88-4e16-91da-c80027afc006&lang=ru_RU"></script>
     <script src="js/parallax.min.js"></script>
