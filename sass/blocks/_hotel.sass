@@ -74,9 +74,19 @@
          &--next
             right: 18px
             background-image: url(../img/arrow-next.svg)
+            &:hover
+               transform: scale(1.1, 1.1)
+               transition: 1s
+            &:not(:hover)
+               transition: 1s
          &--prev
             left: 18px
             background-image: url(../img/arrow-prev.svg)
+            &:hover
+               transform: scale(1.1, 1.1)
+               transition: 1s
+            &:not(:hover)
+               transition: 1s
 
 .stars
    display: flex
