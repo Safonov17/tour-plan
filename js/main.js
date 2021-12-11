@@ -49,7 +49,6 @@ $(document).ready(function () {
   // меню
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
-    console.log("Клик по кнопке меню");
     document.querySelector(".header__bottom").classList.toggle("header__bottom-visible");
   });
 
